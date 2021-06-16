@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>报告</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!--Main Navigation-->
+  <header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark scrolling-navbar indigo">
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">主页</a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index1.html">流行乐
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index2.html">爵士乐</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index3.html">摇滚乐</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index4.html">电子乐</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index5.html">报告</a>
+            </li>
+          </div>
+          <!-- Collapsible content -->
+  
+        </div>
+  
+      </nav>
+      <!--/.Navbar-->
+      <main class="mt-5">
+        <!--Main container-->
+        <div class="container">
+          <!--Grid row 1-->
+          <div class="row">
+            <!--Grid column 1-->
+            <div class="col-md-12 mb-4">
+              <h1 class="text-center">《通信软件开发与应用》课程结业报告</h1>
+              <hr>
+            </div>
+            <div class="col-md-12 mb-4">
+              <h3>一、静态网站</h3>
+              <h5>1、网站内容</h5>
+              <pre >    网站主要由6个页面构成，分别为主页、流行音乐页面、R&B音乐页面、摇滚音乐页面、电子音乐页面和实验报告组成。主页是对网页整体介绍，插入代表视频，对相关的部分
+音乐种类进行介绍，以及涉及到的部分歌手进行介绍，通过五角星的个数代表喜爱程度；在页面最后放入比较常用的音乐播发器和视频播发器链接。第二个页面为流行音乐页面，对
+歌手进行介绍，同时列举歌手代表作，并在代表作介绍后放有mv视频链接，其余页面内容大致相同，主色调为紫色。</pre>
+              <h5>2、部分功能描述</h5>
+              <pre>导航条：可以相互点击进行页面切换，通过直接放页面文件链接进行实现，同时添加“active”，使得点击时候有点击提示；
+视频：添加“controls”、“autoplay”，可以控制视频播放，同时也是自动播放，需要浏览器有相关插件进行控制播放；
+卡片：卡片插入相关图片和对应音乐种类的页面链接，点击图片可以查看放大的效果图，点击底部按钮，跳转到相应页面；
+轮播：一共有4个页面进行轮播，是对相关歌手的介绍，暂时无跳转等功能；
+              </pre>
+              <h3>二、开发过程</h3>
+              <pre>    整体结合老师提供的MDB教程就行修改，结合自己的想法，从教程一、二、三当中选取合适模块进行拼接，实现网页的展示。首选设定网站主题，选取大致展示内容以及想要呈
+现的效果，确定好展示内容之后，查看教程中合适的模块并进行适当修改，使得卡片或者轮播页面等适合当前内容；网页每个版块都确定好之后，在网上收索先关题材资料，修改文
+件格式大小等，让先关内容合适网页预留的框架；最后对细节进行适当修改，例如导航条的颜色、按钮的颜色等，使其颜色结构统一，具有美感。
+              </pre>
+              <h3>三、问题及解决办法</h3>
+              <pre>问题一：视频通过添加video标签进行展示，但是对预留模块大小不匹配，同时无法控制其播放；
+解决办法：通过网上查找解决办法，添加视频的高度和宽度，从而让视频完美匹配预留模块的大小，同时添加“controls”、“autoplay”，可以控制视频播放，同时也是自动播放。
+问题二：在歌手模块中，添加一个轮播页面，修改信息后，发现上端按钮发生偏移，整体模块也发生不同程度偏移；
+解决办法：将所有代码复原，一个一个修改，发现是由于字数不同，从而导致偏移的出现，将每个图片下方的字数统一好则不会出现模块偏移的情况。
+问题三：插入多个视频，卡片格式混乱，并且视频播放不全；
+解决办法：目前没有找到合适解决办法，通过超链接的点击的方式，点击按钮即可看到视频。
+问题四：将网站部署到GitHub时，视频或者图片文件不得超过25M；
+解决办法：通过压缩图片或者视频，但是同时牺牲掉视频的清晰度，同时又带来一个新的问题，就是视频格式为mp4，但是压缩的视频无法进行正常播放。
+              </pre>
+              <h3>四、总结</h3>
+              <pre>    通过对这几个页面的制作，收获了很多，同时也知道自己所学的还远远不够。课堂上老师讲解的内容，通过本次网页制作进行了实践，主要使用MDB的模块，但是制作过程中还
+是遇到许多大大小小的问题，直接使用模块已经是很简单的事情，如果需要运用html或者css进行设计，需要花费更多的精力或者时间，而且取得效果可能也不尽人意，例如通过盒
+子模型设计轮播或者卡片的框架，需要很多时间，而现在可以直接运用，十分方便快捷，而且效果也十分好。在制作过程中，确定模块、修改内容整体比较顺利，过程中出现模块偏
+移、格式混乱修改起来比较麻烦，收集材料也需要考虑素材的清晰度、视频的大小、颜色搭配，是比较耗费时间的，但是我只是简简单单使用很少的一部分功能，还有很多都没有尝
+试和设计，足以见得想要做好网页还有很多东西需要学习；同时也很遗憾没能使用前端框架Angular制作动态网站，市场上制作网站几乎都是动态，是比较科学的，但是动态网页使
+用的Angular框架有一定难度，没有入门，也是非常遗憾的。
+              </pre>
+            </div>
+          </div>
+
+          
